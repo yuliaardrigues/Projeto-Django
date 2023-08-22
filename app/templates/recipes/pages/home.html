@@ -1,16 +1,38 @@
-
 {% include 'recipes/partials/head.html' %}
 
 <body>
-    <header class="main-header-container">
-    <div class="main-header container"> 
-        <h1>
-            <a class="main-logo" href="/">
-                <i class="fas fa-utensils main-logo-icon"></i>
-                <span class="main-logo-text">Recipes</span>
-                </a>
-            </h1>
-        </div>
-    </header>
-</body>
+  {% include 'recipes/partials/header.html' %} 
+  {% include 'recipes/partials/search.html' %}
 
+  <main class="main-content-container">
+    <div class="main-content main-content-list container">
+      <div class="recipe recipe-list-item">
+        <div class="recipe-list-cover">
+          <img src="https://placehold.co/1280x720.png" alt="temp" />
+        </div>
+        <div class="recipe-title-container">
+          <h2 class="recipe-title">Lorem ipsum dolor sit amet.</h2>
+        </div>
+        <div class="recipe-author">
+          <span class="recipe-author-item">
+            <i class="fas fa-user"></i>
+            Yulia Rodrigues
+          </span>
+          <span class="recipe-author-item">
+            <i class="fas fa-calendar-alt"></i>
+            22/08/2023 às 12:15
+          </span>
+          <span class="recipe-author-item">
+            <a href="/recipes/category/cafe-da-manha/">
+              <i class="fas fa-layer-group"></i>
+              <span>Café da manhã</span>
+            </a>
+          </span>
+        </div>
+        <div class="recipe-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime ratione eos ipsam sed, neque unde sunt quidem a praesentium nesciunt? Reiciendis ad officiis illum rerum, numquam quasi culpa velit!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
